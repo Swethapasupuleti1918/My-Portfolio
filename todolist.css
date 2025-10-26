@@ -67,4 +67,35 @@ ul li{
     font-size: 20px;
     text-wrap: wrap;
 }
-
+ul li::before{
+    content: "";
+    height:32px;
+    position:absolute;
+    width:32px;
+    background-image: url("radiobuttonunchecked.png");
+    background-size: cover;
+    background-position: center;
+    top 10px;
+    left:0px;
+}
+ul li.checked{
+    color:black;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: "";
+    height:28px;
+    position:absolute;
+    width:28px;
+    background-image: url("check.png");
+    background-size: cover;
+    background-position: center;
+    top 10px;
+    left:0px;
+}
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    font:29px;
+}
